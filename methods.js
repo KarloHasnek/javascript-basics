@@ -1,5 +1,5 @@
 function createBull(bullName, height, weight) {
-  return {
+  const bull = {
     name: bullName,
     height: height,
     weight: weight,
@@ -14,13 +14,12 @@ function createBull(bullName, height, weight) {
       return "useless bull";
     },
   };
+  bull.moo();
 }
 
 const bik1 = createBull("Bikonja", 1.5, 800);
 const bik2 = createBull("Mercedes", 1.9, 880);
 const bik3 = createBull("Tornado", 1.8, 850);
-
-bik1.moo();
 
 console.log(bik1.bullCategory());
 console.log(bik2.bullCategory());
